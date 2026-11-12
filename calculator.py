@@ -33,4 +33,5 @@ part_coefficient = parts[part_number][1]
 color_coefficient = colors[color_number][1]
 price = 12000 * part_coefficient * color_coefficient
 
-print(f"\nСтоимость покраски: {price:.0f} руб.")
+formatted_price = f"{price:,.0f}".replace(",", " ")
+print(f"\nСтоимость покраски: {formatted_price} руб.")
